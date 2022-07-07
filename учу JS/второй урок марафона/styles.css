@@ -64,5 +64,15 @@ body {
 }
 
 .hold {
-  border: 5px solid #eee;
+  border: 2px solid #bed4e0;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to left top,#adf2f7 10%,  transparent 30%, transparent 70%, #adf2f7 90%);
+  border-image-slice: 1;
 }
