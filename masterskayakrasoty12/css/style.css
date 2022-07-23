@@ -40,11 +40,16 @@ body {
 	margin-right: 55px;
 }
 
-.header_item > a {
+.header_link{
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
 	color: #000000;
+	transition: all 0.3s ease-in-out;
+}
+
+.header_link:hover {
+	color: #DE7184;
 }
 
 .header_item:last-child {
@@ -74,6 +79,7 @@ body {
 	padding: 14px;
 	background-color: #DE7184;
 	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
 }
 
 .header_button_link:hover {
@@ -92,14 +98,23 @@ body {
 	margin-top: 40px;
 	display: flex;
 	justify-content: center;
+	
 }
 
-.slide_promo {
-	width: 250vh;
+/* .slide_promo {
+	width: clamp(1920px, 100%, 1920px) ;
 	height: 82vh;
 	background: url(../image/slide_promo1.jpg) no-repeat;
 	background-size: cover;
 	background-position: top center;
+	text-align: center;
+} */
+
+.slide_promo {
+	width: clamp(320px, 100%, 1920px);
+	height: 82vh;
+	background: url(../image/slide_promo1.jpg) no-repeat center center fixed;
+	background-size: cover;
 	text-align: center;
 }
 
@@ -137,6 +152,7 @@ body {
 	border: 2px solid #DE7184;
 	border-radius: 5px;
 	backdrop-filter: blur(7px);
+	transition: all 0.3s ease-in-out;
 }
 
 .promo_button a:hover {
@@ -144,3 +160,33 @@ body {
 }
 
 /* END PROMO SECTION */
+
+
+
+
+
+/* START ABOUT US SECTION */
+
+.about_us_section {
+	width: clamp(320px, 100%, 1920px);
+	height: 60vh;
+	background: url(../image/background_about_us.png) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+}
+
+.about_us_title {
+	padding-top: 100px;
+}
+
+.about_us_text {
+	display: block;
+	max-width: 850px;
+	margin: 70px auto;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
+}
+/* END ABOUT US SECTION */
