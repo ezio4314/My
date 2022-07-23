@@ -175,6 +175,10 @@ body {
 	text-align: center;
 }
 
+.abou_us_container {
+	padding: 0 20px;
+}
+
 .about_us_title {
 	padding-top: 100px;
 }
