@@ -34,4 +34,4 @@ const prevSlide = () => {
 next.addEventListener('click', nextSlide)
 prev.addEventListener('click', prevSlide)
 
-setInterval(nextSlide, 2500)
+setInterval(nextSlide, 5000)
