@@ -56,6 +56,21 @@ body {
 	margin-right: 0px;
 }
 
+.header_nav li {
+	position: relative;
+}
+
+.sub-header_nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color:#FFFFFF;
+}
+
+.sub-header_link {
+	color: #000;
+}
+
 .header_conection {
 	display: flex;
 }
