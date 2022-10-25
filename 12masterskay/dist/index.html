@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/head.html',{
-		"title":"Мастерская красоты 12"
-		})
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Мастерская красоты 12</title>
+</head>
 <body>
-	@@include('html/header.html')
+	<header>
+	<div class="header_container">
+		<div class="header_logo">
+			<a href="#">
+				<img src="img/logo.svg" alt="Мастерская красоты 12">
+			</a>
+		</div>
+		<ul class="header_nav">
+			<li class="header_item">
+				<a class="header_link" href="#">Услуги</a>
+			</li>
+			<li class="header_item">
+					<a class="header_link" href="#">Акции</a>
+			</li>
+			<li class="header_item">
+					<a class="header_link" href="#">Прайс</a>
+			</li>
+			<li class="header_item">
+					<a class="header_link" href="#">Галерея</a>
+			</li>
+		</ul>
+		<div class="header_conection">
+			<div class="header_tel">
+				<span><img src="img/header-tel.svg"></span>
+				<a href="tel:+79991386893" class="tel_link">+7 (999) 888 12 34</a>
+			</div>
+			<div class="header_button">
+				<a href="#" class="header_button_link">ЗАПИСАТЬСЯ</a>
+			</div>
+		</div>
+	</div>
+</header>
 	<main>
 		<secrion class="promo_section">
 			<div class="slide_promo_container">
