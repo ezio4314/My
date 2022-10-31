@@ -5,15 +5,9 @@ a {
 }
 
 body {
+  height: 100%;
   font-family: "Montserrat";
   background-color: #E3E3E3;
-}
-
-.wrapper {
-  padding: 0 20px;
-  max-width: 1170px;
-  /*Позиционирование по центру*/
-  margin: 0 auto;
 }
 
 /* END STANDART STYLE */
@@ -338,23 +332,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* END HEADER */
 /* START PROMO SECTION */
-.slide_promo_container {
-  margin-top: 40px;
+.wrapper_promo {
+  min-height: 82vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-/* .slide_promo {
-	width: clamp(1920px, 100%, 1920px) ;
-	height: 82vh;
-	background: url(../image/slide_promo1.jpg) no-repeat;
-	background-size: cover;
-	background-position: top center;
-	text-align: center;
-} */
+.slide_promo_container {
+  margin-top: 40px;
+  min-height: 82vh;
+  display: flex;
+}
+
 .slide_promo {
-  width: clamp(320px, 100%, 1920px);
-  height: 82vh;
+  flex: 1 1 auto;
+  margin: 0px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   display: none;
 }
 
@@ -407,8 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 #btn_prev, #btn_next {
   position: absolute;
   left: 0;
-  bottom: 0;
-  height: 82vh;
+  min-height: 82vh;
   width: 70px;
   background-color: gray;
   opacity: 0.4;
@@ -425,3 +421,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* END PROMO SECTION */
+/* START ABOUT US SECTION */
+.about_us_section {
+  width: clamp(320px, 100%, 1920px);
+  height: 60vh;
+  background: url(../img/background_about_us.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.abou_us_container {
+  padding: 0 20px;
+}
+
+.about_us_title {
+  padding-top: 100px;
+}
+
+.about_us_text {
+  display: block;
+  max-width: 850px;
+  margin: 70px auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+/* END ABOUT US SECTION */
