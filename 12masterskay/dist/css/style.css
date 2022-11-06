@@ -292,6 +292,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
 }
 
+.header_conection {
+  display: flex;
+  align-items: center;
+}
+
+.header_tel {
+  margin-right: 45px;
+}
+
+.tel_link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
 .header_nav li {
   position: relative;
 }
@@ -300,11 +316,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 20px 0px 0px;
 }
 
-.header_list {
-  display: flex;
-}
-
 .header_list > li {
+  position: relative;
   margin-right: 55px;
 }
 .header_list > li:last-child {
@@ -384,6 +397,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 5px;
   width: 0;
   height: 0;
+  transition: transform 0.3s ease 0s;
   border-top: 10px solid #000;
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
@@ -421,23 +435,114 @@ body.touch .arrow {
   display: block;
 }
 
+@media (min-width: 1320px) {
+  .header_list {
+    display: flex;
+    align-items: center;
+  }
+}
+/* Бургер меню */
+.burger_icon {
+  display: none;
+}
+
+@media (max-width: 1320px) {
+  .header_nav a.parent {
+    margin: 0;
+  }
+  .header_logo {
+    display: none;
+  }
+  .header_container {
+    position: fixed;
+    right: 10px;
+    z-index: 5;
+  }
+  .header_conection {
+    display: none;
+  }
+  .burger_icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .burger_icon span,
+.burger_icon::before,
+.burger_icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+  }
+  .burger_icon::before,
+.burger_icon::after {
+    content: "";
+  }
+  .burger_icon::before {
+    top: 0;
+  }
+  .burger_icon::after {
+    bottom: 0;
+  }
+  .burger_icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .header_nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+  .header_list > li {
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0px 0px 30px 0px;
+  }
+  .header_list > li:last-child {
+    margin-bottom: 0;
+  }
+  .header_link {
+    display: block;
+    color: #FFF;
+    font-size: 34px;
+  }
+  .sub_header_list {
+    position: relative;
+    margin: 0px 0px 15px 0px;
+  }
+  .sub_sub_header_list {
+    padding: 0px 5px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .arrow {
+    position: absolute;
+    border-top: 10px solid #fff;
+    right: 13px;
+  }
+  .sub_header_arrow.arrow {
+    right: 5px;
+    border-left: 7px solid transparent;
+    border-bottom: none;
+    border-top: 10px solid #000;
+    border-right: 7px solid transparent;
+  }
+}
+/* Бургер меню */
 /* выпадающее меню */
-.header_conection {
-  display: flex;
-  align-items: center;
-}
-
-.header_tel {
-  margin-right: 45px;
-}
-
-.tel_link {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000;
-}
-
 /* END HEADER */
 /* START PROMO SECTION */
 .wrapper_promo {
