@@ -435,29 +435,18 @@ body.touch .arrow {
   display: block;
 }
 
+.burger_icon {
+  display: none;
+}
+
+/*Бургер меню*/
 @media (min-width: 1320px) {
   .header_list {
     display: flex;
     align-items: center;
   }
 }
-/* Бургер меню */
-.burger_icon {
-  display: none;
-}
-
 @media (max-width: 1320px) {
-  .header_nav a.parent {
-    margin: 0;
-  }
-  .header_logo {
-    display: none;
-  }
-  .header_container {
-    position: fixed;
-    right: 10px;
-    z-index: 5;
-  }
   .header_conection {
     display: none;
   }
@@ -505,8 +494,24 @@ body.touch .arrow {
     transition: left 0.3s ease 0s;
     overflow: auto;
   }
-  .header_list > li {
+  .header_nav:before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+  }
+  .header_list {
     text-align: center;
+    max-width: 175px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .header_nav a.parent {
+    margin: 0;
+  }
+  .header_list > li {
     flex-wrap: wrap;
     margin: 0px 0px 30px 0px;
   }
@@ -514,7 +519,6 @@ body.touch .arrow {
     margin-bottom: 0;
   }
   .header_link {
-    display: block;
     color: #FFF;
     font-size: 34px;
   }
@@ -529,19 +533,9 @@ body.touch .arrow {
     top: 0;
   }
   .arrow {
-    position: absolute;
     border-top: 10px solid #fff;
-    right: 13px;
-  }
-  .sub_header_arrow.arrow {
-    right: 5px;
-    border-left: 7px solid transparent;
-    border-bottom: none;
-    border-top: 10px solid #000;
-    border-right: 7px solid transparent;
   }
 }
-/* Бургер меню */
 /* выпадающее меню */
 /* END HEADER */
 /* START PROMO SECTION */
