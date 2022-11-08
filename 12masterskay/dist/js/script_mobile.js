@@ -25,3 +25,21 @@ if(isMobile.any()){
 }else{
 	body.classList.add('mouse');
 }
+
+// Меню бургер
+
+const iconBurger = document.querySelector('.burger_icon');
+const headerNav = document.querySelector('.header_nav');
+if (iconBurger){
+	iconBurger.addEventListener("click", function (e) {
+		document.body.classList.toggle('lock');
+		iconBurger.classList.toggle('active');
+		headerNav.classList.toggle('active');
+	});
+}
+
+// if (iconBurger.classList.contains('active')) {
+// 	document.body.classList.remove('lock');
+// 	iconBurger.classList.remove('active');
+// 	headerNav.classList.remove('active');
+//}

@@ -292,6 +292,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
 }
 
+.header_logo_mob {
+  display: none;
+}
+
 .header_conection {
   display: flex;
   align-items: center;
@@ -440,13 +444,31 @@ body.touch .arrow {
 }
 
 /*Бургер меню*/
-@media (min-width: 1320px) {
+body.lock {
+  overflow: hidden;
+}
+
+@media (max-width: 1320px) {
+  .header_logo_pc {
+    display: none;
+  }
+  .header_logo_mob {
+    display: block;
+  }
+}
+@media (min-width: 1110px) {
   .header_list {
     display: flex;
     align-items: center;
   }
 }
-@media (max-width: 1320px) {
+@media (max-width: 1110px) {
+  .header_logo_pc {
+    display: block;
+  }
+  .header_logo_mob {
+    display: none;
+  }
   .header_conection {
     display: none;
   }
@@ -454,8 +476,8 @@ body.touch .arrow {
     z-index: 5;
     display: block;
     position: relative;
-    width: 30px;
-    height: 18px;
+    width: 40px;
+    height: 30px;
     cursor: pointer;
   }
   .burger_icon span,
@@ -466,7 +488,7 @@ body.touch .arrow {
     height: 10%;
     width: 100%;
     transition: all 0.3s ease 0s;
-    background-color: #fff;
+    background-color: #DE7184;
   }
   .burger_icon::before,
 .burger_icon::after {
@@ -482,11 +504,24 @@ body.touch .arrow {
     top: 50%;
     transform: scale(1) translate(0px, -50%);
   }
+  .burger_icon.active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .burger_icon.active::before {
+    background-color: #fff;
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .burger_icon.active::after {
+    background-color: #fff;
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
   .header_nav {
     z-index: 1;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -501,6 +536,9 @@ body.touch .arrow {
     top: 0;
     left: 0;
     height: 70px;
+  }
+  .header_nav.active {
+    left: 0;
   }
   .header_list {
     text-align: center;
@@ -535,8 +573,23 @@ body.touch .arrow {
   .arrow {
     border-top: 10px solid #fff;
   }
+  .sub_header_arrow.arrow {
+    right: 5px;
+    border-left: 7px solid transparent;
+    border-bottom: none;
+    border-top: 10px solid #000;
+    border-right: 7px solid transparent;
+  }
 }
-/* выпадающее меню */
+@media (max-width: 700px) {
+  .header_logo_pc {
+    display: none;
+  }
+  .header_logo_mob {
+    display: block;
+  }
+}
+/* Меню Бургер */
 /* END HEADER */
 /* START PROMO SECTION */
 .wrapper_promo {
@@ -642,8 +695,12 @@ body.touch .arrow {
   padding: 0 20px;
 }
 
-.about_us_title {
+.about_us_title_pc {
   padding-top: 100px;
+}
+
+.about_us_title_mob {
+  display: none;
 }
 
 .about_us_text {
@@ -657,4 +714,13 @@ body.touch .arrow {
   color: #000000;
 }
 
+@media (max-width: 500px) {
+  .about_us_title_pc {
+    display: none;
+  }
+  .about_us_title_mob {
+    padding-top: 100px;
+    display: block;
+  }
+}
 /* END ABOUT US SECTION */
