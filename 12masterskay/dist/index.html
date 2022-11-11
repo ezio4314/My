@@ -8,27 +8,78 @@
 	<title>Мастерская красоты 12</title>
 </head>
 <body>
-	<header>
+	<header class="header">
 	<div class="header_container">
-		<div class="header_logo">
+		<div class="header_logo_pc">
 			<a href="#">
 				<img src="img/logo.svg" alt="Мастерская красоты 12">
 			</a>
 		</div>
-		<ul class="header_nav">
-			<li class="header_item">
-				<a class="header_link" href="#">Услуги</a>
-			</li>
-			<li class="header_item">
-					<a class="header_link" href="#">Акции</a>
-			</li>
-			<li class="header_item">
-					<a class="header_link" href="#">Прайс</a>
-			</li>
-			<li class="header_item">
-					<a class="header_link" href="#">Галерея</a>
-			</li>
-		</ul>
+		<div class="header_logo_mob">
+			<a href="#">
+				<img src="img/logo12.svg" alt="Мастерская красоты 12">
+			</a>
+		</div>
+		<div class="header_burger burger">
+			<div class="burger_icon">
+				<span></span>
+			</div>
+			<nav class="header_nav">
+				<ul class="header_list">
+					<li>
+						<a data-goto=".about_us_anchor" class="header_link" href="#">Услуги</a>
+						<span class="header_arrow arrow"></span>	
+						<ul class="sub_header_list">
+							<li>
+								<a href="" class="sub_header_link">Маникюр</a>
+							</li>
+							<li>
+								<a href="" class="sub_header_link">Маникюр</a>
+								<span class="sub_header_arrow arrow"></span>
+								<ul class="sub_sub_header_list">
+									<li>
+										<a href="" class="sub_sub_header_link">Маникюр гель лак</a>
+									</li>
+									<li>
+										<a href="" class="sub_sub_header_link">Маникюр гель лак</a>
+									</li>
+									<li>
+										<a href="" class="sub_sub_header_link">Маникюр гель лак</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="" class="sub_header_link">Маникюр</a>
+							</li>
+							<li>
+								<a href="" class="sub_header_link">Маникюр</a>
+								<span class="sub_header_arrow arrow"></span>
+								<ul class="sub_sub_header_list">
+									<li>
+										<a href="" class="sub_sub_header_link">Маникюр гель лак</a>
+									</li>
+									<li>
+										<a href="" class="sub_sub_header_link">Маникюр гель лак</a>
+									</li>
+									<li>
+										<a href="" class="sub_sub_header_link">Маникюр гель лак</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+							<a class="header_link" href="#about_us">Акции</a>
+					</li>
+					<li >
+							<a class="header_link" href="#">Прайс</a>
+					</li>
+					<li>
+							<a class="header_link" href="#">Галерея</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<div class="header_conection">
 			<div class="header_tel">
 				<span><img src="img/header-tel.svg"></span>
@@ -41,46 +92,64 @@
 	</div>
 </header>
 	<main>
-		<secrion class="promo_section">
-			<div class="slide_promo_container">
-				<div class="slide_promo active first">
-					<div class="promo_text">
-						<h1>Какая то супер акция</h1>
-						<h2>Какое то описание этой супер акции ауаупкрп пкупукпукп </h2>
+		<div class="wrapper_promo">
+			<secrion class="promo_section">
+				<div class="slide_promo_container">
+					<div class="slide_promo active first">
+						<div class="promo_text">
+							<h1>Какая то супер акция</h1>
+							<h2>Какое то описание этой супер акции ауаупкрп пкупукпукп </h2>
+						</div>
+						<div class="promo_button">
+							<a href="#" class="promo_button_link">Подробнее</a>
+						</div>
 					</div>
-					<div class="promo_button">
-						<a href="#" class="promo_button_link">Подробнее</a>
+					<div class="slide_promo second">
+						<div class="promo_text">
+							<h1>Какая то супер акция</h1>
+							<h2>Какое то описание этой супер акции ауаупкрп пкупукпукп </h2>
+						</div>
+						<div class="promo_button">
+							<a href="#" class="promo_button_link">Подробнее</a>
+						</div>
 					</div>
+					<div class="slide_promo third">
+						<div class="promo_text">
+							<h1>Какая то супер акция</h1>
+							<h2>Какое то описание этой супер акции ауаупкрп пкупукпукп </h2>
+						</div>
+						<div class="promo_button">
+							<a href="#" class="promo_button_link">Подробнее</a>
+						</div>
+					</div>
+					<div id="btn_prev"></div>
+					<div id="btn_next"></div>
 				</div>
-				<div class="slide_promo second">
-					<div class="promo_text">
-						<h1>Какая то супер акция</h1>
-						<h2>Какое то описание этой супер акции ауаупкрп пкупукпукп </h2>
-					</div>
-					<div class="promo_button">
-						<a href="#" class="promo_button_link">Подробнее</a>
-					</div>
+				<!-- <div class="dots_container">
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div> -->
+			</secrion>
+		</div>
+		<section id="about_us" class="about_us_section about_us_anchor">
+			<div class="abou_us_container">
+				<div class="about_us_title_pc">
+					<img src="img/logo.svg" alt="Мастерская красоты 12">
 				</div>
-				<div class="slide_promo third">
-					<div class="promo_text">
-						<h1>Какая то супер акция</h1>
-						<h2>Какое то описание этой супер акции ауаупкрп пкупукпукп </h2>
-					</div>
-					<div class="promo_button">
-						<a href="#" class="promo_button_link">Подробнее</a>
-					</div>
+				<div class="about_us_title_mob">
+					<img src="img/logo12.svg" alt="Мастерская красоты 12">
 				</div>
-				<div id="btn_prev"></div>
-				<div id="btn_next"></div>
+				<p class="about_us_text">Ваша красота — наша профессия! 
+					Цель нашего творчества - создать гармоничный образ, подчеркнуть 
+					природные данные на основе 12 цветотипов внешности.
+					Наше вдохновение - цвет Ваших глаз, форма лица, цвет и текстура натуральных волос.
+					Помимо процедур по уходу за волосами, в нашей мастерской красоты вы можете сделать маникюр, педикюр, коррекцию и окрашивание бровей, ресниц, а также визаж.</p>
 			</div>
-			<!-- <div class="dots_container">
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-			</div> -->
-		</secrion>
+		</section>
 	</main>
-	<script src="js/app.min.js"></script>
-	<!-- <script src="js/promo_slider.js"></script> -->
+	<script src="js/app.js"></script>
+	<script src="js/script_mobile.js"></script>
+	<script src="js/promo_slider.js"></script>
 </body>
 </html>
