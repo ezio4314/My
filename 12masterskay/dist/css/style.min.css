@@ -10,13 +10,6 @@ body {
   background-color: #E3E3E3;
 }
 
-.wrapper {
-  padding: 0 20px;
-  max-width: 1170px;
-  /*Позиционирование по центру*/
-  margin: 0 auto;
-}
-
 /* END STANDART STYLE */
 @font-face {
   font-family: Montserrat;
@@ -731,26 +724,3 @@ body.lock {
   }
 }
 /* END ABOUT US SECTION */
-/* START SERVICES SECTION */
-.services_title h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  text-align: center;
-  color: #000000;
-}
-
-.services_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 80px;
-}
-
-.services_card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-/* END SERVICES SECTION */
