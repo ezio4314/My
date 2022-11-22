@@ -1133,6 +1133,16 @@ body.lock {
     width: 20px;
   }
 }
+@media (max-height: 800px) {
+  .promo_text {
+    margin-top: 250px;
+  }
+}
+@media (max-height: 700px) {
+  .promo_text {
+    margin-top: 200px;
+  }
+}
 /* END PROMO SECTION */
 /* START ABOUT US SECTION */
 .about_us_section {
@@ -1281,6 +1291,9 @@ body.lock {
   }
 }
 @media (max-width: 500px) {
+  .services_section {
+    margin-top: 100px;
+  }
   .services_card {
     grid-column-gap: 15px;
   }
@@ -1528,6 +1541,8 @@ body.lock {
 footer {
   height: 200px;
   margin-top: 100px;
+  padding-top: 30px;
+  background-color: #dddddd;
 }
 
 .footer_container {
