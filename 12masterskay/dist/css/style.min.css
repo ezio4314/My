@@ -1127,6 +1127,15 @@ body.lock {
   #btn_prev, #btn_next {
     width: 40px;
   }
+  .first {
+    background: url(../img/slide_promo1.jpg) no-repeat center center;
+  }
+  .second {
+    background: url(../img/slide_promo2.jpg) no-repeat center center;
+  }
+  .third {
+    background: url(../img/slide_promo3.jpg) no-repeat center center;
+  }
 }
 @media (max-width: 700px) {
   #btn_prev, #btn_next {
