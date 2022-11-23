@@ -798,6 +798,12 @@ img.mfp-img {
 .sub_header_list li {
   background-color: #FFF;
 }
+.sub_header_list li:first-child {
+  border-radius: 10px 10px 0px 0px;
+}
+.sub_header_list li:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
 
 .sub_header_link {
   display: inline-block;
@@ -1007,11 +1013,24 @@ body.lock {
     position: relative;
     margin: 0px 0px 15px 0px;
   }
+  .sub_header_list li {
+    background-color: transparent;
+  }
+  .sub_header_link {
+    color: #fff;
+  }
   .sub_sub_header_list {
     padding: 0px 5px;
     position: relative;
     left: 0;
     top: 0;
+    min-width: 150px;
+  }
+  .sub_sub_header_list li {
+    background-color: #fff;
+  }
+  .sub_sub_header_link {
+    color: #000;
   }
   .arrow {
     border-top: 10px solid #fff;
@@ -1020,7 +1039,7 @@ body.lock {
     right: 5px;
     border-left: 7px solid transparent;
     border-bottom: none;
-    border-top: 10px solid #000;
+    border-top: 10px solid #fff;
     border-right: 7px solid transparent;
   }
 }
