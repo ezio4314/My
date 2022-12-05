@@ -1641,3 +1641,115 @@ footer {
   }
 }
 /* END FOOTER */
+/* START STYLE SERVICES */
+/* START PROMO STYLE SERVICES */
+.wrapper_promo_services {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo_section_services {
+  margin-top: 40px;
+  min-height: 82vh;
+  display: flex;
+}
+
+.promo_services_content {
+  flex: 1 1 auto;
+  background: url(../img/promo_services.jpg) no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.promo_text_services {
+  margin-top: 300px;
+}
+
+.promo_text_services h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.promo_text_services h2 {
+  margin-top: 30px;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.promo_text_services h2 > span {
+  color: #DE7184;
+}
+
+/* END PROMO STYLE SERVICES */
+/* START INFO STYLE SERVICES */
+.info_section {
+  margin-top: 100px;
+}
+
+.info_title h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+}
+
+.info_text p {
+  margin-top: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+/* END INFO STYLE SERVICES */
+/* START BENEFITS STYLE SERVICES */
+.benefits_section {
+  margin-top: 100px;
+}
+
+.benefits_title h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+}
+
+.benefits_container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  align-items: center;
+}
+
+.benefits_left img {
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.benefits_list li {
+  margin-bottom: 20px;
+  max-width: 570px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.benefits_list li:last-child {
+  margin-bottom: 0px;
+}
+
+/* END BENEFITS STYLE SERVICES */
+/* END STYLE SERVICES */
