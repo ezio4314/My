@@ -1752,4 +1752,50 @@ footer {
 }
 
 /* END BENEFITS STYLE SERVICES */
+.stages_section {
+  margin-top: 100px;
+}
+
+.wrapper_stages {
+  padding: 0 20px;
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+.stages_title h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: start;
+  color: #000000;
+}
+
+.stages_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.stages_item {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.stages_img {
+  margin-right: 20px;
+}
+
+.stages_text p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+/* START STAGES STYLE SERVICES */
+/* END STAGES STYLE SERVICES */
 /* END STYLE SERVICES */
