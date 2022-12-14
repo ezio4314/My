@@ -1710,6 +1710,22 @@ footer {
   color: #000000;
 }
 
+@media (max-width: 1050px) {
+  .info_text p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 650px) {
+  .info_title h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .info_text p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 /* END INFO STYLE SERVICES */
 /* START BENEFITS STYLE SERVICES */
 .benefits_section {
@@ -1764,6 +1780,12 @@ footer {
     justify-items: center;
   }
 }
+@media (max-width: 650px) {
+  .benefits_title h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
 /* END BENEFITS STYLE SERVICES */
 /* START STAGES STYLE SERVICES */
 .stages_section {
@@ -1804,12 +1826,24 @@ footer {
 
 .stages_text p {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
 }
 
+@media (max-width: 1150px) {
+  .stages_text p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .stages_text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 /* END STAGES STYLE SERVICES */
 /* START CARE STYLE SERVICES */
 .care_section {
@@ -1878,6 +1912,24 @@ footer {
   }
   .care_item_lef2 {
     order: 1;
+  }
+  .care_item_right1 p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .care_item_lef2 p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .care_item_right1 p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .care_item_lef2 p {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 /* END CARE STYLE SERVICES */
