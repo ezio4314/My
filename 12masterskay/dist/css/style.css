@@ -1489,6 +1489,7 @@ body.lock {
 .section_brands {
   height: 400px;
   margin-top: 100px;
+  margin-bottom: 100px;
   background: url(../img/brands_background.png) no-repeat center center;
   background-size: 100%;
 }
@@ -1568,7 +1569,6 @@ body.lock {
 /* START FOOTER */
 footer {
   height: 200px;
-  margin-top: 100px;
   padding-top: 30px;
   background-color: #dddddd;
 }
@@ -1936,6 +1936,7 @@ footer {
 /* START ADDITION STYLE SERVICES */
 .addition_section {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .addition_title h2 {
@@ -1976,3 +1977,21 @@ footer {
 
 /* END ADDITION STYLE SERVICES */
 /* END STYLE SERVICES */
+/* START CONTACTS SERVICES */
+.contacts_container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+iframe {
+  height: 82vh;
+}
+
+.contacts_info {
+  background: url(../img/background_contacts.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+/* END CONTACTS SERVICES */
