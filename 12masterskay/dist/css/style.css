@@ -2003,11 +2003,11 @@ iframe {
 .contacts_info {
   background: url(../img/background_contacts.jpg);
   background-size: cover;
+  padding: 0px 40px;
 }
 
 .contacts_info_content {
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 30px;
 }
 
 .contacts_title h1 {
@@ -2019,23 +2019,23 @@ iframe {
 }
 
 .social_button {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .social_button a {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .social_button a:last-child {
   margin-right: 0px;
 }
 
 .social_button a > img {
-  max-width: 41px;
-  max-height: 41px;
+  max-width: 31px;
+  max-height: 31px;
 }
 
 .info_container {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -2056,27 +2056,27 @@ iframe {
 .info_container_text p {
   margin-top: 7px;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 24px;
   color: #FFFFFF;
 }
 
 .route_title h2 {
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 28px;
   color: #DE7184;
 }
 
 .route_info {
   margin-top: 20px;
-  max-width: 760px;
+  max-width: 800px;
 }
 
 .route_info h5 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #F9AAB8;
 }
@@ -2088,4 +2088,53 @@ iframe {
   color: #FFFFFF;
 }
 
+@media (max-width: 1210px) {
+  .contacts_container {
+    grid-template-columns: 1fr;
+  }
+  .map {
+    order: 2;
+  }
+  .social_button {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .header_container {
+    margin-top: 20px;
+  }
+  .contacts_container {
+    margin-top: 20px;
+  }
+  .contacts_title h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .info_container_text h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DE7184;
+  }
+  .info_container_text p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .info_container_img img {
+    margin-right: 20px;
+  }
+  .route_title h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .route_info h5 {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .route_info p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
 /* END CONTACTS SERVICES */
