@@ -1051,6 +1051,11 @@ body.lock {
     display: block;
   }
 }
+@media (max-width: 500px) {
+  .header_container {
+    margin-top: 20px;
+  }
+}
 /* Меню Бургер */
 /* END HEADER */
 /* START PROMO SECTION */
@@ -1159,6 +1164,11 @@ body.lock {
 @media (max-width: 700px) {
   #btn_prev, #btn_next {
     width: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .slide_promo_container {
+    margin-top: 20px;
   }
 }
 @media (max-height: 800px) {
@@ -1686,6 +1696,11 @@ footer {
   color: #DE7184;
 }
 
+@media (max-width: 500px) {
+  .promo_section_services {
+    margin-top: 20px;
+  }
+}
 /* END PROMO STYLE SERVICES */
 /* START INFO STYLE SERVICES */
 .info_section {
@@ -1706,24 +1721,24 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 34px;
   color: #000000;
 }
 
 @media (max-width: 1050px) {
   .info_text p {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 30px;
   }
 }
 @media (max-width: 650px) {
   .info_title h2 {
     font-size: 28px;
-    line-height: 34px;
+    line-height: 38px;
   }
   .info_text p {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 26px;
   }
 }
 /* END INFO STYLE SERVICES */
@@ -1758,8 +1773,8 @@ footer {
   max-width: 570px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   color: #000000;
 }
 
@@ -1769,8 +1784,8 @@ footer {
 
 @media (max-width: 1200px) {
   .benefits_list li {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 @media (max-width: 1010px) {
@@ -1828,20 +1843,20 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 30px;
   color: #000000;
 }
 
 @media (max-width: 1150px) {
   .stages_text p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 26px;
   }
 }
 @media (max-width: 650px) {
   .stages_text p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
   }
 }
 /* END STAGES STYLE SERVICES */
@@ -1859,7 +1874,7 @@ footer {
 }
 
 .care_container {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-row-gap: 60px;
 }
@@ -1885,7 +1900,7 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
-  line-height: 34px;
+  line-height: 38px;
   color: #000000;
 }
 
@@ -1893,7 +1908,7 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
-  line-height: 34px;
+  line-height: 38px;
   color: #000000;
 }
 
@@ -1915,21 +1930,21 @@ footer {
   }
   .care_item_right1 p {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 34px;
   }
   .care_item_lef2 p {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 34px;
   }
 }
 @media (max-width: 650px) {
   .care_item_right1 p {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 30px;
   }
   .care_item_lef2 p {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 30px;
   }
 }
 /* END CARE STYLE SERVICES */
@@ -1942,13 +1957,13 @@ footer {
 .addition_title h2 {
   font-weight: 700;
   font-size: 32px;
-  line-height: 39px;
+  line-height: 40px;
   text-align: center;
   color: #000000;
 }
 
 .addition_container {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -1975,6 +1990,18 @@ footer {
   color: #000000;
 }
 
+@media (max-width: 850px) {
+  .addition_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .addition_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+  }
+}
 /* END ADDITION STYLE SERVICES */
 /* END STYLE SERVICES */
 /* START CONTACTS SERVICES */
@@ -2084,7 +2111,7 @@ iframe {
 .route_info p {
   font-weight: 500;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 20px;
   color: #FFFFFF;
 }
 
@@ -2100,9 +2127,6 @@ iframe {
   }
 }
 @media (max-width: 500px) {
-  .header_container {
-    margin-top: 20px;
-  }
   .contacts_container {
     margin-top: 20px;
   }
@@ -2134,7 +2158,7 @@ iframe {
   }
   .route_info p {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 21px;
   }
 }
 /* END CONTACTS SERVICES */
