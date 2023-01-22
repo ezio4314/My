@@ -1209,18 +1209,15 @@ body.lock {
   margin: 70px auto;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 30px;
   text-align: center;
   color: #000000;
 }
 
 @media (max-width: 800px) {
-  .about_us_section {
-    height: 50vh;
-  }
   .about_us_text {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 26px;
   }
 }
 @media (max-width: 600px) {
@@ -1241,7 +1238,7 @@ body.lock {
   }
   .about_us_text {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 24px;
   }
 }
 /* END ABOUT US SECTION */
@@ -1253,6 +1250,16 @@ body.lock {
   line-height: 39px;
   text-align: center;
   color: #000000;
+}
+
+.services_sub_title h2 {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #606060;
 }
 
 .services_container {
@@ -1403,9 +1410,10 @@ body.lock {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 20px;
   text-align: center;
   color: #000000;
+  max-width: 300px;
 }
 
 #reviews_button_left {
