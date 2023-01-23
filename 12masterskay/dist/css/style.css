@@ -10,6 +10,10 @@ body {
   background-color: #E3E3E3;
 }
 
+.body.lock {
+  overflow: hidden;
+}
+
 .wrapper {
   padding: 0 20px;
   max-width: 1170px;
@@ -2185,12 +2189,12 @@ iframe {
   transition: all 0.8s ease 0s;
 }
 
-.popup.open {
+.popup:target {
   opacity: 1;
   visibility: visible;
 }
 
-.popup.open .popup_content {
+.popup:target .popup_content {
   transform: translate(0px, 0px);
   opacity: 1;
 }
@@ -2254,10 +2258,6 @@ iframe {
   font-size: 16px;
   line-height: 20px;
   color: rgba(83, 66, 69, 0.45);
-}
-
-.form_field_message {
-  padding: 15px 15px 60px 15px;
 }
 
 .form_button {

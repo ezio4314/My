@@ -1,6 +1,6 @@
 const popupLinks = document.querySelectorAll('.popup-link');
-const body = document.querySelector('body');
-const lockPadding = document.querySelectorAll('.lock-padding');
+// const body = document.querySelector('body');
+const lockPadding = document.querySelectorAll(".lock-padding");
 
 let unlock = true;
 
@@ -22,7 +22,7 @@ const popupCloseIcon = document.querySelectorAll('.close-popup');
 if (popupCloseIcon.length > 0) {
 	for (let index = 0; index < popupCloseIcon.length; index++) {
 		const el = popupCloseIcon[index];
-		el.addEventListener('click', function (e) {
+		el.addEventListener("click", function (e) {
 			popupClose(el.closest('.popup'));
 			e.preventDefault();
 		});
@@ -31,13 +31,13 @@ if (popupCloseIcon.length > 0) {
 
 function popupOpen(curentPopup) {
 	if (curentPopup && unlock) {
-		const popupActive = document.querySelector('.popup.open');
+		const popupActive = document.querySelector('.popup.openp');
 		if (popupActive) {
 			popupclose(popupActive, false);
 		}	else {
 			bodyLock();
 		}
-		curentPopup.classList.add('open');
+		curentPopup.classList.add('openp');
 		curentPopup.addEventListener("click", function (e) {
 			if (!e.target.closest('.popup_content')) {
 				popupClose(e.taget.closest('.popup'));
@@ -55,7 +55,7 @@ function bodyLock() {
 		}
 	}
 	body.style.paddingRight = lockPaddingValue;
-	body.classList.add('lock');
+	body.classList.add('lockp');
 
 	unlock = false;
 	setTimeout(function () {
@@ -65,12 +65,14 @@ function bodyLock() {
 
 function bodyUnlock() {
 	setTimeout(function () {
-		for ( let index = 0; index < lockPadding.length; index++) {
-			const el = lockPadding[index];
-			el.style.paddingRight = '0px';
+		if (lockPadding.length > 0) {
+			for ( let index = 0; index < lockPadding.length; index++) {
+				const el = lockPadding[index];
+				el.style.paddingRight = '0px';
+			}
 		}
 		body.style.paddingRight = '0px';
-		body.classList.remove('lock');
+		body.classList.remove('lockp');
 	}, timeout);
 
 	unlock = false;
@@ -78,3 +80,35 @@ function bodyUnlock() {
 		unlock = true;
 	}, timeout);
 }
+
+document.addEventListener('keydown', function (e) {
+	if (e.which === 27) {
+		popupActive = document.querySelector('.popup.openp');
+		popupclose(popupActive);
+	}
+});
+
+(function () {
+	//проверяет поддержку
+	if (!Element.prototype.closest) {
+		//реализуем
+		Element.prototype.closest = function (css) {
+			var node = this;
+			while (node) {
+				if (node.matches(css)) return node;
+				else node = node.parentElement;
+			}
+			return null;
+		};
+	}
+})();
+(function () {
+	//проверяет поддержку
+	if (!Element.prototype.matches) {
+		// определяет свойсво
+		Element.prototype.matches = Element.prototype.matchesSelector ||
+		Element.prototype.webkitMatchesSelector ||
+		Element.prototype.mozMatchesSelector ||
+		Element.prototype.msMatchesSelector;
+	}
+})();
