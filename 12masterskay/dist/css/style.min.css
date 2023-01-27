@@ -1333,6 +1333,14 @@ body.lock {
   text-align: center;
 }
 
+.card_button:hover {
+  transform: translate(0, -2px);
+  -webkit-transform: translate(0, -2px);
+  -o-transform: translate(0, -2px);
+  -moz-transform: translate(0, -2px);
+  box-shadow: 0px 5px 5px 5px rgba(53, 53, 53, 0.3215686275);
+}
+
 @media (max-width: 1020px) {
   .services_container {
     grid-template-columns: 1fr;
@@ -2192,11 +2200,13 @@ iframe {
 .popup:target {
   opacity: 1;
   visibility: visible;
+  z-index: 6;
 }
 
 .popup:target .popup_content {
   transform: translate(0px, 0px);
   opacity: 1;
+  z-index: 6;
 }
 
 .popup_body {
@@ -2225,6 +2235,10 @@ iframe {
   top: 10px;
   font-size: 20px;
   color: #000;
+}
+
+.popup_logo img {
+  max-width: 100%;
 }
 
 .popup_title {
