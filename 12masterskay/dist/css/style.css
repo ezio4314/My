@@ -1692,6 +1692,18 @@ footer {
   text-align: center;
 }
 
+.promo_podrav {
+  background: url(../img/promo_podrav.jpg) no-repeat center center fixed;
+}
+
+.promo_mmanicure {
+  background: url(../img/promo_mmanicure.jpg) no-repeat center center fixed;
+}
+
+.promo_mmhaircute {
+  background: url(../img/promo_mmhaircute.jpg) no-repeat center center fixed;
+}
+
 .promo_text_services {
   margin-top: 300px;
 }
@@ -1716,6 +1728,11 @@ footer {
   color: #DE7184;
 }
 
+@media (max-width: 800px) {
+  .promo_text_services {
+    margin-top: 200px;
+  }
+}
 @media (max-width: 500px) {
   .promo_section_services {
     margin-top: 20px;
@@ -1730,7 +1747,7 @@ footer {
 .info_title h2 {
   font-weight: 700;
   font-size: 32px;
-  line-height: 39px;
+  line-height: 42px;
   text-align: center;
   color: #000000;
 }
@@ -1761,6 +1778,15 @@ footer {
     line-height: 26px;
   }
 }
+@media (max-width: 450px) {
+  .info_section {
+    margin-top: 50px;
+  }
+  .info_title h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 /* END INFO STYLE SERVICES */
 /* START BENEFITS STYLE SERVICES */
 .benefits_section {
@@ -1770,7 +1796,7 @@ footer {
 .benefits_title h2 {
   font-weight: 700;
   font-size: 32px;
-  line-height: 39px;
+  line-height: 42px;
   text-align: center;
   color: #000000;
 }
@@ -1818,7 +1844,16 @@ footer {
 @media (max-width: 650px) {
   .benefits_title h2 {
     font-size: 28px;
-    line-height: 34px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 450px) {
+  .benefits_section {
+    margin-top: 50px;
+  }
+  .benefits_title h2 {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 /* END BENEFITS STYLE SERVICES */
@@ -1878,6 +1913,23 @@ footer {
     font-size: 14px;
     line-height: 22px;
   }
+  .stages_title h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 450px) {
+  .stages_section {
+    margin-top: 50px;
+  }
+  .stages_title h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .stages_container {
+    margin-top: 20px;
+  }
 }
 /* END STAGES STYLE SERVICES */
 /* START CARE STYLE SERVICES */
@@ -1888,7 +1940,7 @@ footer {
 .care_title h2 {
   font-weight: 700;
   font-size: 32px;
-  line-height: 39px;
+  line-height: 42px;
   text-align: center;
   color: #000000;
 }
@@ -1958,12 +2010,25 @@ footer {
   }
 }
 @media (max-width: 650px) {
+  .care_title h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
   .care_item_right1 p {
     font-size: 20px;
     line-height: 30px;
   }
   .care_item_lef2 p {
     font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .care_section {
+    margin-top: 50px;
+  }
+  .care_title h2 {
+    font-size: 24px;
     line-height: 30px;
   }
 }
@@ -1977,7 +2042,7 @@ footer {
 .addition_title h2 {
   font-weight: 700;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 42px;
   text-align: center;
   color: #000000;
 }
@@ -2000,6 +2065,18 @@ footer {
   justify-content: center;
 }
 
+.addition_item:hover {
+  box-shadow: 0px 14px 10px 1px rgba(0, 0, 0, 0.15);
+  transform: translate(0, -8px);
+  -webkit-transform: translate(0, -8px);
+  -o-transform: translate(0, -8px);
+  -moz-transform: translate(0, -5px);
+}
+
+.addition_item_img img {
+  max-height: 100px;
+}
+
 .addition_item_text p {
   margin-top: 30px;
   font-style: normal;
@@ -2016,10 +2093,25 @@ footer {
     grid-row-gap: 30px;
   }
 }
+@media (max-width: 650px) {
+  .addition_title h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
 @media (max-width: 600px) {
   .addition_container {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .addition_section {
+    margin-top: 50px;
+  }
+  .addition_title h2 {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 /* END ADDITION STYLE SERVICES */
