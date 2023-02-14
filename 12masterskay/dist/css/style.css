@@ -1704,6 +1704,10 @@ footer {
   background: url(../img/promo_mmhaircute.jpg) no-repeat center center fixed;
 }
 
+.promo_kreative {
+  background: url(../img/promo_kreative.jpg) no-repeat center center fixed;
+}
+
 .promo_text_services {
   margin-top: 300px;
 }
