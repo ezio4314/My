@@ -1708,6 +1708,18 @@ footer {
   background: url(../img/promo_kreative.jpg) no-repeat center center fixed;
 }
 
+.promo_detskay {
+  background: url(../img/promo_detskay.jpg) no-repeat center center fixed;
+}
+
+.promo_gmanicure {
+  background: url(../img/promo_gmanicure.jpg) no-repeat center center fixed;
+}
+
+.promo_tonirovanie {
+  background: url(../img/promo_tonirovanie.jpg) no-repeat center center fixed;
+}
+
 .promo_text_services {
   margin-top: 300px;
 }
@@ -1811,6 +1823,11 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 40px;
   align-items: center;
+}
+
+.benefits_u {
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
 }
 
 .benefits_left img {
