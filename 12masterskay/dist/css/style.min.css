@@ -1720,6 +1720,22 @@ footer {
   background: url(../img/promo_tonirovanie.jpg) no-repeat center center fixed;
 }
 
+.promo_melirovanie {
+  background: url(../img/promo_melirovanie.jpg) no-repeat center center fixed;
+}
+
+.promo_okrasvot {
+  background: url(../img/promo_okrasvot.jpg) no-repeat center center fixed;
+}
+
+.promo_strwumen {
+  background: url(../img/promo_strwumen.jpg) no-repeat center center fixed;
+}
+
+.promo_parafin {
+  background: url(../img/promo_parafin.jpg) no-repeat center center fixed;
+}
+
 .promo_text_services {
   margin-top: 300px;
 }
@@ -1825,7 +1841,7 @@ footer {
   align-items: center;
 }
 
-.benefits_u {
+.benefits_os {
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
 }
