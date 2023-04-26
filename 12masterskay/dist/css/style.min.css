@@ -1841,6 +1841,10 @@ footer {
   align-items: center;
 }
 
+.dp_benefits_section {
+  margin-top: 0px;
+}
+
 .benefits_os {
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
@@ -1859,6 +1863,11 @@ footer {
   font-size: 18px;
   line-height: 28px;
   color: #000000;
+}
+
+.dp_benefirs_list li {
+  font-size: 22px;
+  line-height: 32px;
 }
 
 .benefits_list li:last-child {
