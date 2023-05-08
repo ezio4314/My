@@ -1736,6 +1736,26 @@ footer {
   background: url(../img/promo_parafin.jpg) no-repeat center center fixed;
 }
 
+.promo_ob {
+  background: url(../img/promo_ob.jpg) no-repeat center center fixed;
+}
+
+.promo_dp {
+  background: url(../img/promo_dp.jpg) no-repeat center center fixed;
+}
+
+.promo_sp {
+  background: url(../img/promo_sp.jpg) no-repeat center center fixed;
+}
+
+.promo_ukladka {
+  background: url(../img/promo_ukladka.jpg) no-repeat center center fixed;
+}
+
+.promo_dv {
+  background: url(../img/promo_dv.jpg) no-repeat center center fixed;
+}
+
 .promo_text_services {
   margin-top: 300px;
 }
