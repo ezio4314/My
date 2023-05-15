@@ -1756,6 +1756,10 @@ footer {
   background: url(../img/promo_dv.jpg) no-repeat center center fixed;
 }
 
+.promo_pk {
+  background: url(../img/promo_pk.jpg) no-repeat center center fixed;
+}
+
 .promo_text_services {
   margin-top: 300px;
 }
