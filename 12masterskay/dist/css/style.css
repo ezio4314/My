@@ -1091,19 +1091,19 @@ body.lock {
 }
 
 .first {
-  background: url(../img/slide_promo1.jpg) no-repeat center center fixed;
-  background-size: cover;
-  text-align: center;
-}
-
-.second {
   background: url(../img/slide_promo2.jpg) no-repeat center center fixed;
   background-size: cover;
   text-align: center;
 }
 
-.third {
+.second {
   background: url(../img/slide_promo3.jpg) no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.third {
+  background: url(../img/slide_promo2.jpg) no-repeat center center fixed;
   background-size: cover;
   text-align: center;
 }
@@ -1156,13 +1156,13 @@ body.lock {
     width: 40px;
   }
   .first {
-    background: url(../img/slide_promo1.jpg) no-repeat center center;
-  }
-  .second {
     background: url(../img/slide_promo2.jpg) no-repeat center center;
   }
-  .third {
+  .second {
     background: url(../img/slide_promo3.jpg) no-repeat center center;
+  }
+  .third {
+    background: url(../img/slide_promo1.jpg) no-repeat center center;
   }
 }
 @media (max-width: 700px) {
